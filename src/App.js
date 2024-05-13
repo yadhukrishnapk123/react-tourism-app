@@ -1,15 +1,36 @@
-import React from "react";
+import React,{useState} from "react";
 import Header from "./components/Header"
 import Banner from "./components/Banner"
 import Foter from "./components/Footer"
 import Card from "./components/Card";
 import cardData from "./components/cardData";
+
+
 import "./style.css"
 
 
+
+
+//ge the favaratae images
+
+
+
 function MyApp(){
+ 
+  let [favImges,setFavImages] = useState("")
+
+  function getFavImges(imgSrc){
+   setFavImages(favImges = imgSrc)
+
+  
+  }
+  
+
+
+
+
  let card = cardData.map((cardItem)=>{
-  console.log(cardItem)
+ 
  return(
    <Card cardContent = {
 
@@ -17,10 +38,13 @@ function MyApp(){
   imgSrc:cardItem.imgSrc,
   name:cardItem.name,
   phone:cardItem.phone,
-  email:cardItem.email,
-}
-
-   }/>
+  
+}}
+   
+getFavImges = {
+   getFavImges
+   }
+   />
  )
 });
 
@@ -31,9 +55,12 @@ function MyApp(){
     <Header />
     <Banner />
     <div className="card-container">
-      {card}</div>
+      {card}
+  
+      </div>
 
-    
+
+  
     <Foter />
     
   

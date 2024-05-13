@@ -3,7 +3,7 @@ import React from "react"
 function Foter(){
 
 
-return (<footer>this is footer</footer>)
+return (<footer>  <p>&copy; 2024 Your Company. All rights reserved.</p> </footer>)
 
 
 }

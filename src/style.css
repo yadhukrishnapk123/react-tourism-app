@@ -38,7 +38,7 @@ ul{
     padding: 0;
 }
 header{
-    background-image: linear-gradient(to bottom, #00688B, #007FFF); 
+    background-image: linear-gradient(to bottom, #00688B, #237cd4); 
     padding: 20px;
     display: flex;
    justify-content: space-between;
@@ -71,12 +71,16 @@ header nav{
    border: 0;
  }
 
- .card{
-    margin:20px;
-    
+ 
 
+
+
+
+.card {
+    margin: 20px;
+    border: 2px solid;
+    background-color: antiquewhite;
 }
-
  .card img{
     width: 200px;
     height: 200px;
@@ -84,15 +88,56 @@ header nav{
     margin-bottom: 12px;
     
  }
- .card-container{
-    display: flex;
-    max-width: 600px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
- }
+ 
+
+ .card-container {
+
+}
+
+.fav-head {
+    float: inline-end;
+    margin-top: -375px;
+    margin-right: 234px;
+}
+ 
+
+
+/* Example of styling the favorite button */
+.favorite-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s; /* Animation duration */
+}
+
+/* Hover effect */
+
+
+.card.active{
+    background-color: rgb(39, 142, 70);
+}
+
+
+
+
+.item {
+    position: relative;
+    padding-right: 20px; /* To make space for the favorite icon */
+}
+
+
+
+
 
  footer{
-    background-color: rgb(0, 228, 152);
+    background-color: rgb(93, 100, 168);
     padding: 20px;
  }
